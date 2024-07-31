@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AssetPix.com UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to AssetPix.com</h1>
+    </header>
+    <main>
+        <div class="row">
+            <section id="login-profile" class="button-group">
+                <button id="login">Login</button>
+                <button id="logout">Log Out</button>
+            </section>
+        </div>
+        <div class="row">
+            <section id="asset-info" class="form-group">
+                <label for="asset-id">Asset ID:</label>
+                <input type="text" id="asset-id">
+                <label for="subject-address">Subject Address:</label>
+                <input type="text" id="subject-address">
+                <label for="client-name">Client:</label>
+                <input type="text" id="client-name">
+            </section>
+            <section id="company-info" class="form-group">
+                <label for="company">Company:</label>
+                <input type="text" id="company">
+                <label for="inspector">Insp. By:</label>
+                <input type="text" id="inspector">
+                <label for="inspection-date">Insp. Date:</label>
+                <input type="date" id="inspection-date">
+            </section>
+        </div>
+        <div class="row">
+            <section id="photo-upload" class="form-group">
+                <div id="drag-drop">Drag & Drop Photos Here</div>
+                <button id="upload-photos" class="center-button">Upload Photos</button>
+            </section>
+        </div>
+        <div class="row">
+            <section id="scroll-area" class="form-group">
+                <div id="image-container">
+                    <!-- Uploaded images will appear here -->
+                </div>
+            </section>
+        </div>
+        <div class="row options-buttons-container">
+            <section id="layout-options" class="form-group options">
+                <h3>OPTIONS:</h3>
+                <div class="inline-group">
+                    <label for="layout">Layout:</label>
+                    <select id="layout" class="small-select">
+                        <option value="2x2-default">2x2 Default</option>
+                        <option value="1x1-cover-page">1x1 Cover Page</option>
+                        <option value="1x2">1x2</option>
+                        <option value="1x3">1x3</option>
+                        <option value="3x3">3x3</option>
+                        <option value="3x4">3x4</option>
+                        <option value="2x3">2x3</option>
+                        <option value="5x5-contact-page">5x5 Contact Page</option>
+                    </select>
+                </div>
+                <div class="inline-group">
+                    <label for="cover-page">Add Cover Page:</label>
+                    <input type="checkbox" id="cover-page">
+                </div>
+                <div class="inline-group">
+                    <label for="last-page">Add Contact Page:</label>
+                    <input type="checkbox" id="last-page">
+                </div>
+            </section>
+            <section id="preview" class="form-group preview">
+                <h3>PREVIEW:</h3>
+                <div class="preview-content">
+                    <!-- Add the preview layout image or HTML here -->
+                    <img src="preview-layout.png" alt="Preview Layout">
+                </div>
+            </section>
+            <section class="form-group buttons">
+                <button id="refresh" class="action-button">Refresh</button>
+                <button id="generate-pdf" class="action-button">Generate PDF</button>
+                <button id="clear-photos" class="action-button">Clear All Photos</button>
+            </section>
+        </div>
+        <div class="row">
+            <section id="actions" class="button-group">
+                <button id="profile">Profile</button>
+                <button id="help" class="right-align">Help</button>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 AssetPix.com. ALL RIGHTS RESERVED</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

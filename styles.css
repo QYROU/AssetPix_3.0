@@ -1,0 +1,195 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.form-group, .button-group {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+.form-group label, .form-group input, .form-group select {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inline-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.inline-group label {
+    flex: 0 0 150px; /* Fixed width for labels */
+    margin-right: 10px;
+    text-align: right; /* Right justify the labels */
+}
+
+.inline-group input,
+.inline-group select {
+    flex: 1; /* Take the remaining space */
+}
+
+.small-select {
+    width: 100px; /* Adjust width as needed */
+}
+
+.centered-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.options-buttons-container {
+    display: flex;
+    width: 100%;
+}
+
+.options {
+    flex: 2;
+    background: #d3d3d3;
+    border-right: 1px solid #aaa;
+    padding: 10px;
+}
+
+.preview {
+    flex: 2;
+    background: #d3d3d3;
+    border-right: 1px solid #aaa;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview-content {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.preview-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.buttons {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #d3d3d3;
+    padding: 10px;
+}
+
+.center-button {
+    display: block;
+    margin: 0 auto;
+}
+
+.right-align {
+    margin-left: auto;
+}
+
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.action-button {
+    width: 80%;
+    margin-top: 10px;
+}
+
+#drag-drop {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#scroll-area {
+    height: 300px;
+    overflow-y: scroll;
+    border: 2px solid #ccc;
+    padding: 10px;
+}
+
+#image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#image-container .image-box {
+    flex: 1 1 200px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+#image-container .image-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+#image-container .image-box button {
+    margin-top: 10px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
